@@ -2,10 +2,10 @@ clj-brackets
 ============
 A Simple [Adobe Brackets](https://github.com/adobe/brackets) plugin to evaulate clojure expressions in Brackets! 
 
-## Installation The extension
+## Installation
 Download the extension [clj-brackets.zip](https://github.com/yehohanan7/clj-brackets/blob/master/download/clj-brackets.zip) 
 
-open brackets' extension folder by clicking on help -> Show Extensions Folder in your brackets and then extract the downloaded extension into the user folder
+open brackets' extension folder by clicking on 'help' -> 'Show Extensions Folder' in your brackets and then extract the downloaded extension into the user folder
 
 ## Start Wrepl
 Open a terminal and navigate to your clojure project and start the [wrepl](https://github.com/yehohanan7/wrepl), which will start the http repl on port 7777
