@@ -1,6 +1,6 @@
 clj-brackets
 ============
-A [Adobe Brackets](https://github.com/adobe/brackets) plugin to evaulate clojure expressions. 
+A Simple [Adobe Brackets](https://github.com/adobe/brackets) plugin to evaulate clojure expressions in Brackets! 
 
 ## Installation
 Download the [clojure.zip](https://github.com/yehohanan7/clj-brackets/blob/master/download/clojure.zip) file and extract it into your brackets' extension folder. 
