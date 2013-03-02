@@ -1,6 +1,7 @@
 define(function (require, exports, module) {
     "use strict";    
     var clojureHtml  = require("text!clojure.html");
+    var KeyboardPrefs = JSON.parse(require("text!keyboard.json"));
     
     var Commands           = brackets.getModule("command/Commands"),
         CommandManager     = brackets.getModule("command/CommandManager"),
@@ -10,15 +11,13 @@ define(function (require, exports, module) {
         KeyBindingManager  = brackets.getModule("command/KeyBindingManager"),
         Menus              = brackets.getModule("command/Menus"); 
     
-    var LAUNCH_REPL_NAME = "Launch Clojure REPL";
-    var LAUNCH_REPL_ID = "yehohanan7.brackets-clj.launch-repl"
+    var EVAL_EXPR_NAME = "Evaluate Selected";
+    var EVAL_EXPR_ID = "yehohanan7.clj-brackets.eval-expr"
+    var EVALUATE_EXPR_CMD_NAME = "eval-clojure-expr";
     
     /** @const {string} Brackets Application Menu Constant */
     var CLOJURE_MENU_ID = "clojure-menu";    
     var CLOJURE_MENU_NAME = "Clojure";
-    
-    /** Command names */
-    var EVALUATE_EXPR_CMD_NAME = "eval-clojure-expr";
     
     /** View Ids */
     var RESPONSE_VIEW_ID = 'clojure-response';
@@ -50,10 +49,10 @@ define(function (require, exports, module) {
         }});     
     }
         
-    CommandManager.register(LAUNCH_REPL_NAME, LAUNCH_REPL_ID, evaluateSelected);
+    CommandManager.register(EVAL_EXPR_NAME, EVAL_EXPR_ID, evaluateSelected);
     
     
     var menu = Menus.addMenu(CLOJURE_MENU_NAME, CLOJURE_MENU_ID, Menus.BEFORE, Menus.AppMenuBar.HELP_MENU);        
-    menu.addMenuItem(LAUNCH_REPL_ID);
+    menu.addMenuItem(EVAL_EXPR_ID, KeyboardPrefs.evalExpression);
     menu.addMenuDivider();        
 })

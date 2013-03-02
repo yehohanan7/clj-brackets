@@ -1,0 +1,11 @@
+{
+    "evalExpression":  [
+        {
+            "key": "Ctrl-E"
+        },
+        {
+            "key": "Cmd-E",
+            "platform": "mac"
+        }
+    ]
+}
