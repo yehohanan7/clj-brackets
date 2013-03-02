@@ -7,7 +7,7 @@ Download the [clojure.zip](https://github.com/yehohanan7/clj-brackets/blob/maste
 
 Open a terminal and navigate to your project and start the [wrepl](https://github.com/yehohanan7/wrepl), which will start the http repl on port 7777
 
-open your brackets and start writing clojure code, Select a clojure expression and evaluate it in wrepl by using the short cut : cmd+E
+you can evaluate clojure expressions in brackets by selecting the expression and firing the keyboard event : cmd+E
 
 Happy hacking!
 
